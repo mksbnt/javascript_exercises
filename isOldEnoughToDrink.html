@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>isOldEnoughToDrink</title>
+</head>
+<body>
+<!-- 
+Write a function called "isOldEnoughToDrink".
+Given a number, in this case an age, "isOldEnoughToDrink" 
+returns whether a person of this given age is old enough to legally drink in the United States.
+Notes:* The legal drinking age in the United States is 21. 
+-->
+<script>
+    var age = 22;
+    function isOldEnoughToDrink(age) {
+        if (age >= 21) {
+            true;
+            return;
+        }
+        if (age < 21) {
+            false;
+            return
+        }
+    }
+    isOldEnoughToDrink(age);
+    var output = isOldEnoughToDrink(age);
+    console.log(output); //not working
+</script>
+</body>
+</html>
