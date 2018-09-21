@@ -12,8 +12,10 @@ returns whether a person of this given age is old enough to legally drink in the
 Notes:* The legal drinking age in the United States is 21. 
 -->
 <script>
-    var age = 22;
-    function isOldEnoughToDrink(age) {
+    var age = prompt("How old are you?");
+    age = parseInt(age);
+
+    function isOldEnoughToDrink() {
         if (age >= 21) {
             true;
             return;
@@ -22,10 +24,13 @@ Notes:* The legal drinking age in the United States is 21.
             false;
             return
         }
-    }
-    isOldEnoughToDrink(age);
-    var output = isOldEnoughToDrink(age);
-    console.log(output); //not working //why??
+    };
+    
+    isOldEnoughToDrink();
+    
+    var output = isOldEnoughToDrink();
+    
+    alert(output); //not working //why??
 </script>
 </body>
 </html>
