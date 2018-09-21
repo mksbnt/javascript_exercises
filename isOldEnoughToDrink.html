@@ -15,22 +15,12 @@ Notes:* The legal drinking age in the United States is 21.
     var age = prompt("How old are you?");
     age = parseInt(age);
 
-    function isOldEnoughToDrink() {
-        if (age >= 21) {
-            true;
-            return;
-        }
-        if (age < 21) {
-            false;
-            return
-        }
+    function isOldEnoughToDrink(age) {
+        if (age >= 21) alert("Let`s drink!");
+        if (age < 21) alert("Sorry kid..");
     };
-    
-    isOldEnoughToDrink();
-    
-    var output = isOldEnoughToDrink();
-    
-    alert(output); //not working //why??
+
+    isOldEnoughToDrink(age);
 </script>
 </body>
 </html>
