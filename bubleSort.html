@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>bubbleSort</title>
+</head>
+<body>
+<script>
+    var bubbleSort = function(arr) {
+        do {
+            var swapped = false;
+            arr.forEach((num, i) => {
+                if(num > arr[i + 1]) {
+                    var tmp = num;
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = tmp;
+                    swapped = true;
+                }
+            });
+        } while (swapped === true)
+        return arr;
+    };
+</script>
+</body>
+</html>
