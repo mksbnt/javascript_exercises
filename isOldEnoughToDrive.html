@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>isOldEnoughToDrink</title>
+    <title>isOldEnoughToDrive</title>
 </head>
 <body>
 <!-- 
@@ -13,6 +13,7 @@
 -->
 <script>
     var age = prompt("How old are you?")
+        age = parseInt(age);
     function isOldEnoughToDrive(age) {
         (age >= 16) ? alert("Let`s drive!") : alert("You can`t drive yet..");
     }

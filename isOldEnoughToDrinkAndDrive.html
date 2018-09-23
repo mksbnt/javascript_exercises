@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>isOldEnoughToDrinkAndDrive</title>
+</head>
+<body>
+<!-- 
+    Given a number, in this case an age, "isOldEnoughToDrinkAndDrive" 
+    returns whether a person of this given age is old enough to legally drink and drive in the United States.
+    Notes:  * The legal drinking age in the United States is 21.
+            * It is always illegal to drink and drive in the United States.
+-->
+<script>
+    var age = prompt("How old are you?");
+        age = parseInt(age);
+
+    function isOldEnoughToDrinkAndDrive(age) {
+        if (age < 16) alert("You can neither drive nor drink");
+        if (age >= 16 && age < 21) alert("You can drive but you can`t drink");
+        if (age >= 21) alert("You can drive and you can drink but you can`t drive and drink in the same time");
+    }
+    isOldEnoughToDrinkAndDrive(age);
+</script>
+</body>
+</html>
